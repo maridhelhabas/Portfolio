@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/231ebe179a.js" crossorigin="anonymous"></script>
+
+        <title>My Portfolio Website</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav class="header--fixed header--sticky">
+                    <h1>MARIDHEL HABAS</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hello! I'm <span>Maridhel Habas</span></h1>
+                    <br>
+                    <p style="margin-left: 20%;">Graphic Artist</p>
+                    <div class="div social-icons" style="margin-left: 20%;">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2">
+                        <div class="card">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>
+                                Hey there! I'm <span>Maridhel Habas</span>, and I'm thrilled to share a glimpse into my world of creativity and exploration. 
+                                As a dedicated student, I've discovered my true passion lies in the realm of visual storytelling and design.
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Graphic Artist</span><br>Designing Web/Layout Interfaces</li>
+                                    <li><span>UI/UX Designer</span><br>Designing User Interface</li>
+                                    <li><span>Photographgy</span><br>Photography enthusiast</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2020-2024</span><br>Currently pursuing a Bachelor's degree in  Bachelor of Science in Information Technology.</li>
+                                    <li><span>2018-2020</span><br>Studied Animation/CSS from Lourdes National High School</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Graphic Design</h2>
+                        <p>
+                            Proficient in Adobe Photoshop, Blender and AutoCAD, I specialize in creating visually stunning graphics, illustrations, and 3D renders that captivate audiences and convey messages effectively.
+                            Whether it's crafting intricate designs or bringing concepts to life through 3D modeling and animation, I thrive in pushing the boundaries of creativity.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>
+                            Experienced in using Figma to design intuitive user interfaces and engaging user experiences. 
+                            Through wireframing, prototyping, and user testing, I prioritize usability and accessibility, striving to create interfaces that are both visually appealing and user-friendly.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <h2>Photography</h2>
+                        <p>
+                            Adept in photography, possessing a keen eye for composition, lighting, and storytelling. 
+                            Capable of capturing a diverse range of subjects, from landscapes to candid moments, with a unique artistic perspective.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="assets/images/mobileapp.png">
+                        <div class="layer">
+                            <h3>Mobile Application</h3>
+                            <p>This is my designed UI/UX mobile music application.</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="assets/images/ROOM.png">
+                        <div class="layer">
+                            <h3>Isometric 3D Room</h3>
+                            <p>This is my blender 3D Isometric Room.</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="assets/images/bookcover.png">
+                        <div class="layer">
+                            <h3>Book Cover</h3>
+                            <p>This is my designed Book Cover using Photoshop.</p>
+                        </div>
+                    </div>
+                    <div class="project additional-project">
+                        <img src="assets/images/invitation.png">
+                        <div class="layer">
+                            <h3>Invitation Card</h3>
+                            <p>This is my designed Invitation Card using Photoshop.</p>
+                        </div>
+                    </div>
+                    <div class="project additional-project">
+                        <img src="assets/images/photo.jpg">
+                        <div class="layer">
+                            <h3>Photography</h3>
+                            <p>This is my shot on our Digital Photographgy Class</p>
+                        </div>
+                    </div>
+                    <div class="project additional-project">
+                        <img src="assets/images/TShirtDesign.png">
+                        <div class="layer">
+                            <h3>T-Shirt Design</h3>
+                            <p>This is my designed Departamental Shirt.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn" id="see-more-btn" style="color: #fff;">See More</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <img src="assets/images/contact-photo.jpg" class="contact-photo" style="margin-left: 50px;">
+                        <h1 class="contact-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> habasmaridhel@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 0951-544-0079</p>
+                        
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Enter Name" required>
+                            <input type="email" name="Email" placeholder="Enter Email" required>
+                            <textarea name="Message" rows="6" placeholder="Enter Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+                <p>Copyright © 2024 |Maridhel Habas</p>
+            </div>
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            
+            document.getElementById("see-more-btn").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                var additionalProjects = document.querySelectorAll('.additional-project');
+                for (var i = 0; i < additionalProjects.length; i++) {
+                    additionalProjects[i].classList.toggle('show');
+                }
+
+                var btnText = this.innerText;
+                this.innerText = (btnText === "See More") ? "See Less" : "See More";
+            });
+
+        </script>
+        
+    </body>
+</html>
